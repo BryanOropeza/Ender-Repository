@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ender Oropeza - Pacífico Seguros</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Ender Oropeza</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">Acerca de mi</a></li>
+        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#projects">Quererte sano</a></li>
+        <li><a href="#contact">Contáctame</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Ender Oropeza</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/imagen.jpg" alt="Ender Oropeza profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hola, Soy</p>
+      <h1 class="title">Ender Oropeza</h1>
+      <p class="section__text__p2">Asesor Comercial</p>
+      <p class="section__text__p3">Pacífico Seguros</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="location.href='./#contact'">
+          Información de Contacto
+        </button>
+      </div>
+      <div id="socials-container">
+        <a href="https://www.pacifico.com.pe/" class="icon" target="_blank"><img src="./assets/pacifico.png" alt=""
+            class="icon"></a>
+        <a href="#" id="whatsapp-link" target="_blank"><img src="./assets/wsp.png" alt="WhatsApp" class="icon" /></a>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">¡Conozcamos más!</p>
+    <h1 class="title">Acerca de mi</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experiencia</h3>
+            <p>4+ años <br />Asesor Comercial</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Soy un asesor comercial especializado en seguros de salud. Mi compromiso es brindarte la mejor protección
+            para ti y tu familia. Con atención personalizada, te guiaré en cada paso para asegurar un futuro saludable y
+            seguro. Estoy aquí para responder a todas tus preguntas y encontrar la mejor opción que se adapte a tus
+            necesidades. ¡Tu bienestar es mi prioridad!
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explora el mundo</p>
+    <h1 class="title">Pacífico Seguros</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Formamos parte</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Credicorp</h3>
+                <p>holding financiero más grande del Perú</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Banmédica</h3>
+                <p></p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>United Health Group</h3>
+                <p>Una de las compañías de salud más grandes del mundo</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Sobre nosotros</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Propósito</h3>
+                <p>Proteger la felicidad de las personas</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Gestión Sostenible</h3>
+                <p>Basado en la visión sostenible pacífico</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Oficinas y Agencias</h3>
+                <p>Visita nuestra sede central en Av. Juan de Arona 830, San Isidro - Lima 27 </p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Promociones</h3>
+                <p><a href="https://www.pacifico.com.pe/promociones" target="_blank" id="promocion">Visita nuestra
+                    página</a></p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Estamos contigo a través de nuestros 3 pilares</p>
+    <h1 class="title">Quererte sano</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Te queremos Prevenido</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://querertesano.pe/'">
+              Más información
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Te queremos protegido</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://querertesano.pe/'">
+              Más información
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Te queremos acompañado</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://querertesano.pe/'">
+              Más información
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Ponerse en contacto</p>
+    <h1 class="title">Contáctame</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:enderoropezar@pacifico.com.pe">enderoropezar@pacifico.com.pe</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/wsp.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="#" id="whatsapp-link2" target="_blank">WhatsApp</a></p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">Acerca de mi</a></li>
+          <li><a href="#experience">Experiencia</a></li>
+          <li><a href="#projects">Quererte sano</a></li>
+          <li><a href="#contact">Contáctame</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Ender Oropeza. Todos los derechos Reservados.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
