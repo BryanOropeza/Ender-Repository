@@ -49,11 +49,11 @@ nav,
 }
 
 .nav-links li a {
-  color: var(--color-azul-primario);
+  color: var(--color-blanco-suave);
 }
 
 .nav-links li a:hover {
-  color: #4bbadb;
+  color: var(--color-blanco);
 }
 
 nav {
@@ -82,16 +82,37 @@ nav {
 }
 
 a {
+  position: relative;
   color: var(--color-azul-primario);
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 1rem;
-  text-decoration-color: white;
-  transition: text-decoration 0.5s ease;
+  text-decoration-color: none;
+  transition: text-decoration 3s ease;
 }
 
-a:hover {
+a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -25%;
+  width: 0;
+  height: 3px;
+  /* Altura del subrayado */
+  background: linear-gradient(to right, transparent 50%, var(--color-blanco-suave) 50%);
+  background-size: 200% 100%;
+  /* Hacemos el fondo el doble de ancho */
+  transition: background-position 1s ease;
+  /* Ajustamos la duración de la animación */
+}
+
+
+a:hover::after {
+  width: 100%;
+  /* Hacemos que el subrayado ocupe el ancho completo */
+  background-position: -100% 0;
+  /* Mover el fondo para revelar desde la izquierda */
   color: #4bbadb;
-  text-decoration: underline;
 }
 
 .logo {
