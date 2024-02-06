@@ -346,6 +346,7 @@ section {
 
 #about {
   position: relative;
+  margin-bottom: 100px;
 }
 
 .about-1 .waves {
@@ -415,6 +416,7 @@ section {
 
 #experience {
   position: relative;
+  margin-bottom: 100px;
 }
 
 .experience-sub-title {
