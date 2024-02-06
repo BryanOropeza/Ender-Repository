@@ -1,6 +1,6 @@
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
   #profile {
-    height: 83vh;
+    height: 85vh;
     margin-bottom: 6rem;
   }
 
@@ -15,6 +15,10 @@
 }
 
 @media screen and (max-width: 1200px) {
+  #planes {
+    height: fit-content;
+  }
+
   #desktop-nav {
     display: none;
   }
@@ -58,6 +62,10 @@
 }
 
 @media screen and (max-width: 600px) {
+
+  #planes {
+    height: fit-content;
+  }
 
   #contact,
   footer {

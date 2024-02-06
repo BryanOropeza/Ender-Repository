@@ -28,3 +28,35 @@ document.addEventListener("DOMContentLoaded", function () {
   // Asigna la URL al atributo href del enlace
   whatsappLink.href = whatsappUrl;
 });
+
+
+/*carrusel*/
+$(document).ready(function () {
+  $('.items').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    arrows: true,
+    dots: true,
+
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+});
+
+
+
+

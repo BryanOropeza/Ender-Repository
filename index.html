@@ -5,10 +5,16 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    content="Contrata un seguro o plan de salud, decide asegurar tu vehículo o proteger a tu familia adquiriendo un seguro de vida y hogar. Asegúrate en Pacífico."
+    lang="es-ES" name="description" />
   <title>Ender Oropeza - Pacífico Seguros</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 </head>
 
 <body>
@@ -17,7 +23,8 @@
     <div>
       <ul class="nav-links">
         <li><a href="#about">Acerca de mi</a></li>
-        <li><a href="#experience">Experiencia</a></li>
+        <li><a href="#planes">Planes</a></li>
+        <li><a href="#experience">Pacífico</a></li>
         <li><a href="#projects">Quererte sano</a></li>
         <li><a href="#contact">Contáctame</a></li>
       </ul>
@@ -33,15 +40,22 @@
       </div>
       <div class="menu-links">
         <li><a href="#about" onclick="toggleMenu()">Acerca de mi</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
+        <li><a href="#planes" onclick="toggleMenu()">Planes</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Pacífico</a></li>
         <li><a href="#projects" onclick="toggleMenu()">Quererte sano</a></li>
         <li><a href="#contact" onclick="toggleMenu()">Contáctame</a></li>
       </div>
     </div>
   </nav>
+  <div id="whatsapp-icon">
+    <a href="https://wa.me/51965951888?text=Buen%20día,%20me%20comunico%20para%20obtener%20más%20información%20acerca%20de%20los%20seguros%20de%20salud:"
+      target="_blank">
+      <img src="assets/wsp-verde.png" alt="WhatsApp">
+    </a>
+  </div>
   <section id="profile">
     <div class="section__pic-container">
-      <img src="./assets/imagen.jpg" alt="Ender Oropeza profile picture" />
+      <img src="./assets/imagen.png" alt="Ender Oropeza profile picture" />
     </div>
     <div class="section__text">
       <p class="section__text__p1">Hola, Soy</p>
@@ -60,171 +74,311 @@
       </div>
     </div>
   </section>
-  <section id="about">
-    <p class="section__text__p1">¡Conozcamos más!</p>
-    <h1 class="title">Acerca de mi</h1>
-    <div class="section-container">
-      <div class="section__pic-container">
-        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
-      </div>
-      <div class="about-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
-            <h3>Experiencia</h3>
-            <p>4+ años <br />Asesor Comercial</p>
-          </div>
+  <section id="about" class="about-1">
+    <div class="content-container">
+      <p class="section__text__p1">¡Conozcamos más!</p>
+      <h1 class="title">Acerca de mi</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
         </div>
-        <div class="text-container">
-          <p>
-            Soy un asesor comercial especializado en seguros de salud. Mi compromiso es brindarte la mejor protección
-            para ti y tu familia. Con atención personalizada, te guiaré en cada paso para asegurar un futuro saludable y
-            seguro. Estoy aquí para responder a todas tus preguntas y encontrar la mejor opción que se adapte a tus
-            necesidades. ¡Tu bienestar es mi prioridad!
-          </p>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Experiencia</h3>
+              <p>4+ años <br />Asesor Comercial</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Soy un asesor comercial especializado en seguros de salud. Mi compromiso es brindarte la mejor protección
+              para ti y tu familia. Con atención personalizada, te guiaré en cada paso para asegurar un futuro saludable
+              y
+              seguro. Estoy aquí para responder a todas tus preguntas y encontrar la mejor opción que se adapte a tus
+              necesidades. ¡Tu bienestar es mi prioridad!
+            </p>
+          </div>
         </div>
       </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="planes">
+    <p class="planes-p section__text__p1">¡Conoce más sobre nuestros</p>
+    <h1 class="planes-h1 title">Planes!</h1>
+    <div class="card">
+      <div class="content">
+        <p class="heading">Salud Esencial
+        </p>
+        <p class="para">
+          Un plan diseñado para brindarte la cobertura esencial que necesitas para mantener tu bienestar. Accede a
+          servicios médicos fundamentales y asegura tu salud con tranquilidad.
+        </p>
+        <button class="btn"
+          onclick="window.location.href='https://wa.me/51965951888?text=Buen%20día,%20me%20comunico%20para%20obtener%20más%20información%20acerca%20de%20los%20seguros%20de%20salud:'">Saber
+          más</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <p class="heading">Salud Esencial Plus
+        </p>
+        <p class="para">
+          Da un paso más allá en tu protección con el plan Salud Esencial Plus. Obtén coberturas adicionales y
+          beneficios ampliados para asegurar que estés completamente respaldado en todas tus necesidades de salud.
+        </p>
+        <button class="btn"
+          onclick="window.location.href='https://wa.me/51965951888?text=Buen%20día,%20me%20comunico%20para%20obtener%20más%20información%20acerca%20de%20los%20seguros%20de%20salud:'">Saber
+          más</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <p class="heading">Multisalud Base
+        </p>
+        <p class="para">
+          Un enfoque integral para tu salud con el plan Multisalud Base. Con una variedad de servicios médicos, este
+          plan proporciona una base sólida para tu bienestar general y te ofrece opciones flexibles.
+        </p>
+        <button class="btn"
+          onclick="window.location.href='https://wa.me/51965951888?text=Buen%20día,%20me%20comunico%20para%20obtener%20más%20información%20acerca%20de%20los%20seguros%20de%20salud:'">Saber
+          más</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <p class="heading">Red Preferente
+        </p>
+        <p class="para">
+          Accede a una red de proveedores de salud preferentes con el plan Red Preferente. Disfruta de servicios médicos
+          de alta calidad con la comodidad de una red cuidadosamente seleccionada para tu tranquilidad.
+        </p>
+        <button class="btn"
+          onclick="window.location.href='https://wa.me/51965951888?text=Buen%20día,%20me%20comunico%20para%20obtener%20más%20información%20acerca%20de%20los%20seguros%20de%20salud:'">Saber
+          más</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <p class="heading">Multisalud
+        </p>
+        <p class="para">
+          Amplía tus opciones de atención médica con el plan Multisalud. Este plan ofrece cobertura integral para una
+          variedad de servicios médicos, permitiéndote personalizar tu protección de acuerdo a tus necesidades
+          específicas.
+        </p>
+        <button class="btn"
+          onclick="window.location.href='https://wa.me/51965951888?text=Buen%20día,%20me%20comunico%20para%20obtener%20más%20información%20acerca%20de%20los%20seguros%20de%20salud:'">Saber
+          más</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <p class="heading">Medivida Nacional
+        </p>
+        <p class="para">
+          Un plan de salud diseñado para brindarte cobertura a nivel nacional. Accede a servicios médicos de calidad en
+          todo el país y asegura tu bienestar estés donde estés.
+        </p>
+        <button class="btn"
+          onclick="window.location.href='https://wa.me/51965951888?text=Buen%20día,%20me%20comunico%20para%20obtener%20más%20información%20acerca%20de%20los%20seguros%20de%20salud:'">Saber
+          más</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <p class="heading">Medivida Internacional
+        </p>
+        <p class="para">
+          Piensa más allá de las fronteras con el plan MediVida Internacional. Este plan te proporciona cobertura médica
+          global, asegurando tu salud incluso cuando te encuentras en el extranjero.
+        </p>
+        <button class="btn"
+          onclick="window.location.href='https://wa.me/51965951888?text=Buen%20día,%20me%20comunico%20para%20obtener%20más%20información%20acerca%20de%20los%20seguros%20de%20salud:'">Saber
+          más</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <p class="heading">Planes Sanna
+        </p>
+        <p class="para">
+          Descubre una gama de planes de salud personalizados con la calidad y confianza que ofrece Sanna. Estos planes
+          están diseñados para adaptarse a tus necesidades específicas, brindándote opciones flexibles y atención médica
+          excepcional.
+        </p>
+        <button class="btn"
+          onclick="window.location.href='https://wa.me/51965951888?text=Buen%20día,%20me%20comunico%20para%20obtener%20más%20información%20acerca%20de%20los%20seguros%20de%20salud:'">Saber
+          más</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="content">
+        <p class="heading">Planes Oncológicos
+        </p>
+        <p class="para">
+          Enfrenta el desafío del cáncer con los Planes Oncológicos. Diseñados para proporcionar apoyo integral durante
+          el tratamiento oncológico, estos planes ofrecen cobertura específica para ayudarte a afrontar esta etapa de
+          manera más segura y tranquila.
+        </p>
+        <button class="btn"
+          onclick="window.location.href='https://wa.me/51965951888?text=Buen%20día,%20me%20comunico%20para%20obtener%20más%20información%20acerca%20de%20los%20seguros%20de%20salud:'">Saber
+          más</button>
+      </div>
+    </div>
+    <section id="carrusel">
+      <div class="items">
+        <div> <img src="assets/carrusel-2.png" alt=""></div>
+        <div> <img src="assets/carrusel-1.png" alt=""></div>
+        <div> <img src="assets/carrusel-3.png" alt=""></div>
+        <div> <img src="assets/carrusel-4.png" alt=""></div>
+      </div>
+    </section>
+
   </section>
   <section id="experience">
-    <p class="section__text__p1">Explora el mundo</p>
-    <h1 class="title">Pacífico Seguros</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 class="experience-sub-title">Formamos parte</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Credicorp</h3>
-                <p>holding financiero más grande del Perú</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Banmédica</h3>
-                <p></p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>United Health Group</h3>
-                <p>Una de las compañías de salud más grandes del mundo</p>
-              </div>
-            </article>
+    <div class="content-container">
+      <p class="section__text__p1">Explora el mundo</p>
+      <h1 class="title">Pacífico Seguros</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Formamos parte</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Credicorp</h3>
+                  <p>holding financiero más grande del Perú</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Banmédica</h3>
+                  <p></p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>United Health Group</h3>
+                  <p>Una de las compañías de salud más grandes del mundo</p>
+                </div>
+              </article>
+            </div>
           </div>
-        </div>
-        <div class="details-container">
-          <h2 class="experience-sub-title">Sobre nosotros</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Propósito</h3>
-                <p>Proteger la felicidad de las personas</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Gestión Sostenible</h3>
-                <p>Basado en la visión sostenible pacífico</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Oficinas y Agencias</h3>
-                <p>Visita nuestra sede central en Av. Juan de Arona 830, San Isidro - Lima 27 </p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-              <div>
-                <h3>Promociones</h3>
-                <p><a href="https://www.pacifico.com.pe/promociones" target="_blank" id="promocion">Visita nuestra
-                    página</a></p>
-              </div>
-            </article>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Sobre nosotros</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Propósito</h3>
+                  <p>Proteger la felicidad de las personas</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Gestión Sostenible</h3>
+                  <p>Basado en la visión sostenible pacífico</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Oficinas y Agencias</h3>
+                  <p>Visita nuestra sede central en Av. Juan de Arona 830, San Isidro - Lima 27 </p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Promociones</h3>
+                  <p><a href="https://www.pacifico.com.pe/promociones" target="_blank" id="promocion">Visita nuestra
+                      página</a></p>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
   </section>
   <section id="projects">
-    <p class="section__text__p1">Estamos contigo a través de nuestros 3 pilares</p>
-    <h1 class="title">Quererte sano</h1>
-    <div class="experience-details-container">
-      <div class="about-containers">
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+    <div class="content-container">
+      <p class="section__text__p1">Estamos contigo a través de nuestros 3 pilares</p>
+      <h1 class="title">Quererte sano</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Te queremos Prevenido</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://querertesano.pe/'">
+                Más información
+              </button>
+            </div>
           </div>
-          <h2 class="experience-sub-title project-title">Te queremos Prevenido</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://querertesano.pe/'">
-              Más información
-            </button>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Te queremos protegido</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://querertesano.pe/'">
+                Más información
+              </button>
+            </div>
           </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Te queremos protegido</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://querertesano.pe/'">
-              Más información
-            </button>
-          </div>
-        </div>
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
-          </div>
-          <h2 class="experience-sub-title project-title">Te queremos acompañado</h2>
-          <div class="btn-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://querertesano.pe/'">
-              Más información
-            </button>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Te queremos acompañado</h2>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://querertesano.pe/'">
+                Más información
+              </button>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
   </section>
   <section id="contact">
-    <p class="section__text__p1">Para más detalles</p>
-    <h1 class="title">Contáctame</h1>
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-        <p><a href="mailto:enderoropezar@pacifico.com.pe">enderoropezar@pacifico.com.pe</a></p>
-      </div>
-      <div class="contact-info-container">
-        <img src="./assets/wsp.png" alt="LinkedIn icon" class="icon contact-icon" />
-        <p><a href="#" id="whatsapp-link2" target="_blank">WhatsApp</a></p>
+    <div class="content-container">
+      <p class="section__text__p1">Para más detalles</p>
+      <h1 class="title">Contáctame</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:enderoropezar@pacifico.com.pe">enderoropezar@pacifico.com.pe</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/wsp.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="#" id="whatsapp-link2" target="_blank">WhatsApp</a></p>
+        </div>
       </div>
     </div>
   </section>
   <footer>
-    <!-- <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#about">Acerca de mi</a></li>
-          <li><a href="#experience">Experiencia</a></li>
-          <li><a href="#projects">Quererte sano</a></li>
-          <li><a href="#contact">Contáctame</a></li>
-        </ul>
-      </div>
-    </nav> -->
     <p>Copyright &#169; 2024 Ender Oropeza. Todos los derechos Reservados.</p>
   </footer>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
   <script src="script.js"></script>
 </body>
 
